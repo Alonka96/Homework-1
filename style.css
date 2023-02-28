@@ -10,6 +10,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #showcase {
@@ -18,12 +19,12 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0.2px;
+  padding: 350px;
 }
 #showcase h1 {
   font-size: 50px;
@@ -36,6 +37,7 @@ h1 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  height: 25px;
 }
 #showcase p {
   font-size: 20px;
@@ -47,6 +49,7 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  
 }
 #showcase .button {
   font-size: 18px;
@@ -60,29 +63,34 @@ p {
 section {
   display: block;
 }
-#section-a {
+#section-1 {
   padding: 20px;
   background: #926239;
   color: #fff;
   text-align: center;
 }
-#section-b {
+#section-2 {
   padding: 20px;
   background: #f4f4f4;
   text-align: center;
 }
-#section-c {
-  display: flex;
+#section-3 {
+  display: block;
 }
-#section-c .box-1,
-#section-c .box-3 {
+#section-3 .box-1,
+#section-3 .box-3 {
   background: #926239;
   color: #fff;
 }
-#section-c div {
+#section-3 span {
   padding: 20px;
 }
-div {
-  display: block;
+span {
+  display: inline-block;
+  width: 630px;
+  height: 100px;
+  text-align: center;
 }
-#section-c .box-2{background: #f9f9f9;}
+#section-3 .box-2 {
+  background: #f9f9f9;
+}
